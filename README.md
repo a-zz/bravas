@@ -67,15 +67,11 @@ under your HTTP server root directory and your site's on.
 If you want the latest stable version, just clone the master branch:
 
         ~$ git clone https://github.com/a-zz/bravas
-        (...)
-        ~$
 
 Different versions are kept as separate branches; thus, if you want a specific version, you must
 clone the related branch:
 
          ~# git clone --branch v0.1 https://github.com/a-zz/bravas
-         (...)
-         ~$
         
 (refer to [https://github.com/a-zz/bravas/branches](https://github.com/a-zz/bravas/branches) 
 for a list of available versions)
@@ -84,12 +80,9 @@ If you want a very specific release, you need to clone the related branch and ch
 tag afterwards:
 
         ~$ git clone --branch v0.1 https://github.com/a-zz/bravas
-        (...)
         ~$ cd bravas
         ~/bravas$ git checkout tags/v0.1_rc1
-        (...)
         ~/bravas$ cd ..
-        ~$
 
 (refer to [https://github.com/a-zz/bravas/releases](https://github.com/a-zz/bravas/branches) 
 for a list of available versions)        
@@ -100,7 +93,6 @@ repository just afterwards:
 
         ~$ cd bravas
         ~/bravas$ git remote rm origin
-        ~$
         
 In any clase, git cloning gives you -per design- a fully functional (although local) Git repository, so you can
 readily benefit from Git version control in your site.
@@ -109,8 +101,6 @@ If you want to sync your local repository with a remote Git server (GitHub itsel
 nice choice), just add a _remote_ for your repository and you're done:
 
         ~/bravas$ git remote add origin your://server.repo/url
-        (...)
-        ~$
     
 You may even set up a [GitHub Pages](https://pages.github.com/) repository as remote and your site
 would be online inmmediately, for good and for free. In a nutshell:
@@ -122,14 +112,10 @@ would be online inmmediately, for good and for free. In a nutshell:
 3. Link it your local **brⱯvⱯs** Git repository:
 
         ~/bravas$ git remote add origin https://github.com/i-am-the-walrus/i-am-the-walrus.github.io.git
-        (...)
-        ~$
         
 4. _Push_ your local repository into the remote:
 
         ~/bravas$ git push 
-        (...)
-        ~$
 
 Your site would almost immediately be online at https://i-am-the-walrus.github.io . It works like a charm,
 but you should check the GitHub Pages manual anyway.
