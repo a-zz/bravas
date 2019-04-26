@@ -58,7 +58,10 @@ its own source code, **brⱯvⱯs**' content managers can benefit from it too.
 If you have some experience with Git, the following instructions should pose no difficulty to
 you. Otherwise is a good chance to get to know Git :)
 
-You just need a Git client. That wouldn't be hard to get for your OS of choice.
+Wouldn't you? Well, you can always [download the latest release](https://github.com/a-zz/bravas/releases/latest)
+directly.
+
+Otherwise you just need a Git client. That wouldn't be hard to get for your OS of choice.
 
 Getting  **brⱯvⱯs** is as easy as cloning the project repository from GitHub, namely: 
 [https://github.com/a-zz/bravas](https://github.com/a-zz/bravas). Just place the cloned copy 
