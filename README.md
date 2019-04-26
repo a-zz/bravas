@@ -1,5 +1,5 @@
 
-# brⱯvⱯs - Mini JavaScript-only CMS, v0.1
+# brⱯvⱯs - Mini JavaScript-only CMS, v0.1_1
 
 **brⱯvⱯs** is a purely client-side-JavaScript-driven Content Management System
 (CMS) for small web sites. It doesn't require server-side processing whatsoever,
