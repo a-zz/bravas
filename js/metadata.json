@@ -1,0 +1,27 @@
+/* ************************************************************************** 
+ * bravas: Mini JavaScript-only CMS - Site metadata
+ * ************************************************************************** */
+var site = {
+	"name":"My site",
+	"description":"A brand new brⱯvⱯs site",
+	"indexpage":"about",
+	"meta":
+	[
+		{"httpequiv":"description", "content":"A brand new brⱯvⱯs site"},
+		{"httpequiv":"author", "content":"Unkonwn yet!"}
+	],
+	"menu":
+	[
+		{"menuid":"menu_about", "text":"About", "title":"About this site", "pageid":"about", "exturl":null},
+		{"menuid":"menu_github", "text":"Powered by brⱯvⱯs!", "title":"Powered by brⱯvⱯs!", "pageid":null, "exturl":"https://github.com/a-zz/bravas"}
+	],
+	"pages":
+	[
+		{"pageid":"about", "title":"About this site", "description":"The usual and time-honored 'about' page", "date":"201904271200", "content":"../../README.md", "tags":""},
+		{"pageid":"pageid1", "title":"Sample page 1", "description":"An HTML content page", "date":"201904271230", "content":"content1.html", "tags":"tag1;tag2"},
+		{"pageid":"pageid2", "title":"Sample page 2", "description":"Another HTML content page", "date":"201904271300", "content":"content2.html", "tags":"tag3"},
+		{"pageid":"pageid3", "title":"Sample page 3 (with script)", "description":"An HTML content page with a script", "date":"201904271330", "content":"content3.html", "tags":"tag1;tag3"},
+		{"pageid":"pageid4", "title":"Sample page 4 (MD content)", "description":"A simple text-only MD-formatted content page", "date":"201904271400", "content":"content4.md", "tags":"tag2"}
+	]	
+}
+/* ************************************************************************** */

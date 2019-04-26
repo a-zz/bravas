@@ -1,0 +1,78 @@
+/* ************************************************************************** 
+ * bravas: Mini JavaScript-only CMS - Site metadata manual
+ * ************************************************************************** */
+ 
+Site content is described as a JSON object structured as:
+
+site
+ .name: Site name, used for logos, titles, etc.
+ 
+ .description: Site description, used for logos, titles, etc.
+ 
+ .indexpage: site index page referred by its id (see "Defining pages" below).
+ 
+ .meta: array of HTML <meta> tags for site pages (see "Defining metas").
+ 
+ .menu: array of top menu links (see "Defining menu links").
+ 
+ .pages: array of site content pages  (see "Defining pages").
+ 
+..:: Defining pages ::..
+Pages are added to the site by placing an element in the site.pages array,
+each element containing the fields:
+
+   .pageid: unique identifier for the page, used in site.indexpage and 
+    site.menu, e.g. Ids starting with ~ are reserved for special pages (see
+    below) and should be avoided.
+    
+   .title: page title, used for page links and browser title bar.
+   
+   .description: a simple description or abstract for the page.
+   
+   .date: page date, formatted as yyyymmddhhmm.
+   
+   .content: references the file holding the page content. HTML and MD files
+    are supported:
+     
+     * HTML content files are identified by the '.html' extension and looked for
+       under the /content/html/ directory. I.e. 'aCertainPage.html' is looked
+       for as /content/html/aCertainPage.html. Beware: upon loading the page 
+       this HTML content is written to a <div> in /index.html, so it shouldn't 
+       contain <html>, <head> o <body> elements. Its advisable to place readable 
+       content inside a  <span lang="***whichever***"> for improved handling. 
+       HTML content files can contain JavaScript code, in which case they must 
+       provide a function startContentScript() which will be invoked after
+       content is loaded.
+       
+     * MD content files are identified by the '.md' extension and looked for
+       under the /content/md/ directory. I.e. 'aCertainPage.md' is looked
+       for as /content/md/aCertainPage.md. Content is rendered as HTML by
+       remarkable.js (https://github.com/jonschlinkert/remarkable).
+    
+   .tag: list of page tags, semicolon-separated.
+   
+Currently known special pages are:
+    ~last: refers to the last page added (by page date)
+    ~map: site map page
+    ~random: random page
+   
+..:: Defining metas ::..
+HTML <meta> tags can be added to the site pages by placing elements in the
+site.meta array, each one containing the fields:
+  .httpequiv
+  .content
+Each one of these elements is written to the generated page as a 
+  <meta http-equiv="***" content="***" />
+So far, metas are site-wide, can't be set per page.
+
+..:: Defining menu links ::..
+The top menu is populated by placing elements in the site.menu array, each
+one containing the fields:
+  .menuid: <a> object id (for aplying CSS styles, JavaScript'ing, etc.).
+  .text: link text.
+  .title: title (link tooltip) text.
+  .pageid: site page linked, either custom-defined or special ("~..."). null
+    if linking to an external URL.
+  .exturl: external URL linked. null if linking to an internal (site) page.
+
+/* ************************************************************************** */

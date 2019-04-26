@@ -1,0 +1,12 @@
+/* ************************************************************************** *
+ * Mini Javascript-Only CMS - Content style                                   *
+ * ************************************************************************** */
+
+/* Content styles must be prefixed with the container DIV id, e.g.:           */
+#cntnr-html a 
+	{ color: green; text-shadow: 2px 2px 2px gray; }
+	 
+pre
+    { margin-left: 10pt; margin-right: 20%; padding: 5pt; padding-left: 10pt; 
+        color: lightgreen; background-color: #000000; }        
+/* ************************************************************************** */
