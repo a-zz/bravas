@@ -9,15 +9,11 @@ so it should run virtually under any HTTP server.
 plain-text editor. They can benefit from terse, fast and very lightweight
 content management: edit, save and you're online.
 
-Current project status is: _personal use only_. Mostly stable, but lacking 
-some state-of-the-art features and broader browser compatibility
-testing (any recent browser will very likely be supported, though; any older one
-will as likely be not).
+//TOC//
 
-**brⱯvⱯs** is released under the [GPL v3 license](https://www.gnu.org/licenses/gpl-3.0.en.html), 
-so feel free to use it at will (but fairly).
+## Features 
 
-## Features so far
+### So far
 
 * Simple management scheme: site map is modelled in a [JSON](https://www.json.org/)
     file.
@@ -36,13 +32,13 @@ so feel free to use it at will (but fairly).
     be added. Broke anything? Just fire your browser inspection tool and
     debug.
 
-## Features likely to be added anytime soon
+### Likely to be added anytime soon
 
 * Multilingual support for content pages.
 
 * Basic content search tool.
 
-## Features wishfully to be added (but definitely not soon)
+### Wishfully to be added (but definitely not soon)
 
 * Responsive style sheet.
 
@@ -128,6 +124,15 @@ but you should check the GitHub Pages manual anyway.
 Once you've got your local copy, just take a look at [js/metadata.readme](js/metadata.readme); it 
 should be quite straightforward. The sample (and fully functional) js/metadata.json should be a good 
 reference too. Enjoy!
+
+## Current project status and license
+Current project status is: _personal use only_. Mostly stable, but lacking 
+some state-of-the-art features and broader browser compatibility
+testing (any recent browser will very likely be supported, though; any older one
+will as likely be not).
+
+**brⱯvⱯs** is released under the [GPL v3 license](https://www.gnu.org/licenses/gpl-3.0.en.html), 
+so feel free to use it at will (but fairly).
 
 ## Acknowledgements
 The only third party product included so far is [remarkable.js](https://github.com/jonschlinkert/remarkable) by
