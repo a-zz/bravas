@@ -108,9 +108,9 @@ nice choice), just add a _remote_ for your repository and you're done:
 You may even set up a [GitHub Pages](https://pages.github.com/) repository as remote and your site
 would be online inmmediately, for good and for free. In a nutshell:
 
-1. Create a GitHub account, e.g. _i-am-the walrus_
+1. Create a GitHub account, e.g. _i-am-the-walrus_
 
-2. Sign in and create a repository named i-am-the walrus.github.io
+2. Sign in and create a repository named i-am-the-walrus.github.io
 
 3. Link it your local **brⱯvⱯs** Git repository:
 
