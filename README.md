@@ -112,7 +112,7 @@ would be online inmmediately, for good and for free. In a nutshell:
 
 2. Sign in and create a repository named i-am-the-walrus.github.io
 
-3. Link it your local **brⱯvⱯs** Git repository:
+3. Link your local **brⱯvⱯs** Git repository:
 
         ~/bravas$ git remote add origin https://github.com/i-am-the-walrus/i-am-the-walrus.github.io.git
         
