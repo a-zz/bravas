@@ -2,7 +2,7 @@
  * Mini Javascript-Only CMS - Site layout
  * ************************************************************************** */
 html, body 			
-	{ background-image: url(../img/bg.jpg); background-repeat: repeat; color: #000000; font-family: monospace; font-size: large; font-weight: 500; margin: 0px; }
+	{ color: #000000; font-family: monospace; font-size: large; font-weight: 500; margin: 0px; }
 
 a
 	{ color: #000000; text-decoration: none;}
@@ -87,4 +87,4 @@ div.cntnr-history > ul > li > span.page-description
 	
 div.cntnr-ftr
 	{ width: 98%; text-align: center; padding: 1%; }	
-/* ************************************************************************** */	
+/* ************************************************************************** */
