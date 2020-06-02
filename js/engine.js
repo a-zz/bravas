@@ -10,7 +10,7 @@ function start() {
 	renderFooter();
 	var currentPageId = navigate();
 	addEventListeners();
-    start3rdPartyComponents(currentPageId);
+	start3rdPartyComponents(currentPageId);
 }
 
 // Add site metadata
@@ -149,8 +149,10 @@ function renderPage(pageId, anchor) {
 	};
     if(page.content.endsWith('.html'))
         xhttp.open("GET", 'content/html/' + page.content, true);
-    else if(page.content.endsWith('.md'))
+    else if(page.content.endsWith('.md')) {
+        xhttp.overrideMimeType('text/markdown');
         xhttp.open("GET", 'content/md/' + page.content, true);
+    }
 	xhttp.send();
 }
 
