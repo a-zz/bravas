@@ -148,10 +148,10 @@ function renderPage(pageId, anchor) {
                 showMdContent(document.getElementById("cntnr-html"), this.responseText);
 	};
     if(page.content.endsWith('.html'))
-        xhttp.open("GET", 'content/html/' + page.content, true);
+        xhttp.open("GET", 'content/html/' + page.content + (site.config.clientsidecachebypass?'?' + new Date().getTime():''), true);
     else if(page.content.endsWith('.md')) {
         xhttp.overrideMimeType('text/markdown');
-        xhttp.open("GET", 'content/md/' + page.content, true);
+        xhttp.open("GET", 'content/md/' + page.content + (site.config.clientsidecachebypass?'?' + new Date().getTime():''), true);
     }
 	xhttp.send();
 }

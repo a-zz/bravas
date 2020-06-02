@@ -1,5 +1,5 @@
-/* ************************************************************************** 
- * bravas: Mini JavaScript-only CMS - Site metadata
+/* ************************************************************************** *
+ * bravas: Mini JavaScript-only CMS - Site metadata                           *
  * ************************************************************************** */
 var site = {
 	"name":"My site",
@@ -10,6 +10,10 @@ var site = {
 		{"httpequiv":"description", "content":"A brand new brⱯvⱯs site"},
 		{"httpequiv":"author", "content":"Unkonwn yet!"}
 	],
+  "config":
+	{
+		"clientsidecachebypass":false
+	},
 	"menu":
 	[
 		{"menuid":"menu_about", "text":"About", "title":"About this site", "pageid":"about", "exturl":null},
